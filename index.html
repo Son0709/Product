@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Management</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> <!-- Bootstrap CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> <!-- Bootstrap JS -->
+</head>
+<body>
+    <h1>Product Management</h1>
+    <div id="product-list"></div>
+    <form id="find-all-form">
+        <button type="submit">Find All</button>
+    </form>
+    <form id="find-id-form">
+        <input type="text" id="find-id-productId" maxlength="9" placeholder="Product ID" required pattern=".{9}" title="Product ID must be 9 characters">
+        <button type="submit">Find by ID</button>
+    </form>
+    <form id="create-form">
+        <input type="text" id="create-productId" maxlength="9" placeholder="Product ID" required pattern=".{9}" title="Product ID must be 9 characters">
+        <input type="text" id="create-productName" placeholder="Product Name" required>
+        <input type="number" id="create-quantity" placeholder="Quantity">
+        <input type="text" id="create-note" placeholder="Note">
+        <button type="submit">Create</button>
+    </form>
+    <form id="update-form">
+        <input type="text" id="update-productId" maxlength="9" placeholder="Product ID" required pattern=".{9}" title="Product ID must be 9 characters">
+        <input type="text" id="update-productName" placeholder="Product Name">
+        <input type="number" id="update-quantity" placeholder="Quantity">
+        <input type="text" id="update-note" placeholder="Note">
+        <button type="submit">Update</button>
+    </form>
+    <form id="delete-form">
+        <input type="text" id="delete-productId" maxlength="9" placeholder="Product ID" required pattern=".{9}" title="Product ID must be 9 characters">
+        <button type="submit">Delete</button>
+    </form>
+    <form id="update-note-form">
+        <input type="text" id="update-note-productId" maxlength="9" placeholder="Product ID" required pattern=".{9}" title="Product ID must be 9 characters">
+        <input type="text" id="update-note-note" placeholder="Note" required>
+        <button type="submit">Update Note</button>
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>
